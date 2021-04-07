@@ -1,0 +1,32 @@
+.toggleButton{
+    width:30%;
+    box-shadow: 1px 1px 1px rgb(228, 233, 233);
+    background: transparent;
+    border: 1px solid rgb(228, 233, 233);
+    border-radius: 6%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    z-index: 100;
+    margin-left:0px;
+    padding: 10px;
+    margin-right: 0.5rem;
+    outline: none;
+    cursor: pointer; 
+}
+
+.active{
+    cursor: pointer;
+    outline: none;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: rgb(214, 216, 218);
+    border-bottom: 2px solid rgb(240, 167, 33);
+}
+@media(min-width:320px){
+    .toggleButton{
+        width:45%;
+    }
+    .active{
+        border-bottom: 2px solid rgb(240, 167, 33);
+    }
+}
