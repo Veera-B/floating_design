@@ -1,32 +1,40 @@
 .toggleButton{
-    width:30%;
+    width:200px;
+    padding: 15px;
     box-shadow: 1px 1px 1px rgb(228, 233, 233);
     background: transparent;
     border: 1px solid rgb(228, 233, 233);
     border-radius: 6%;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
-    z-index: 100;
-    margin-left:0px;
-    padding: 10px;
-    margin-right: 0.5rem;
     outline: none;
     cursor: pointer; 
+    font-weight: bold;
+    margin-right: 0.5rem;
+    
 }
-
+.toggleButton:hover{
+    border-top:3px solid #2dd679;
+    color: #2dd679;
+}
 .active{
     cursor: pointer;
     outline: none;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
     background-color: rgb(214, 216, 218);
-    border-bottom: 2px solid rgb(240, 167, 33);
+    border-bottom: 2px solid rgb(228, 93, 15);
 }
-@media(min-width:320px){
+/* @media(max-width:320px){
     .toggleButton{
-        width:45%;
+        width:100%;
+        padding: 10px 30px;
+    }
+    .toggleButton:nth-child(even){
+        width:100%;
+        padding: 10px 40px;
     }
     .active{
         border-bottom: 2px solid rgb(240, 167, 33);
     }
-}
+} */

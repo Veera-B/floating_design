@@ -18,7 +18,7 @@ const [toggleValue,setToggleValue] = useState('');
           <Route path="/conversation" component = {Conversation} />
           <Route path="/notes" component = {Notes} />
           <BoxWrapper>
-            <Togglebutton isActive = {toggleValue==='Conversation'} clicked = {()=>setToggleValue("Conversation")} label = "Conversation Draft">Conversation</Togglebutton>
+            <Togglebutton  isActive = {toggleValue==='Conversation'} clicked = {()=>setToggleValue("Conversation")} label = "Conversation Draft">Conversation</Togglebutton>
             <Togglebutton isActive = {toggleValue==='Notes'} clicked = {()=>setToggleValue("Notes")} label = "Notes" >Notes</Togglebutton>
             <InsideBox>
               {toggleValue === 'Conversation'&& <Conversation />}

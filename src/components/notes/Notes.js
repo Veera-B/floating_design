@@ -1,6 +1,7 @@
 
 import React,{useRef,useEffect, useState} from 'react';
 import {useSpring,animated } from 'react-spring';
+import Ripple from 'react-ripples';
 import Card from '../../UI/Cards/Card';
 import Info from '../../UI/Info/Info';
 import data from '../../MOCK_DATA.json';
@@ -72,11 +73,11 @@ const Notes = (props) => {
                     onChange = {(e)=>setSearchKey(e.target.value)}
                     value = {searchKey} /></div>
                     <div className = "col-4">
-                        <button 
+                       <Ripple color={'#2dd679'}> <button 
                         className = {classes.clearBtn}
                         onClick = {()=>setSearchKey('')}
 
-                        >Clear</button>
+                        >Clear</button></Ripple>
                     </div>
                 </div>
                 
@@ -90,6 +91,30 @@ const Notes = (props) => {
                                 <div className = "col">{value.first_name} Amet dolore reprehenderit sunt commodo ipsum do excepteur consequat eu ipsum culpa aliquip aute do. </div>
                             </animated.div>
                 })}
+                <div style={{padding:"10px 0px"}}>
+                    
+                <Info >
+                        <span>LoreIncididunt amet 
+                            <span style = {{color:'#ed5509',padding:'5px'}}> sit dolore qui magna qui proident </span>
+                            anim duis ad consequat in deserunt sit.</span>
+                </Info>
+                <Card>
+                    <input type = "textarea" style ={{height:'100px',width:"100%"}}/>
+                    <div  style = {{display:'flex',float:'right'}}>
+                        
+                       <Ripple color={'#2dd679'}> <button 
+                        className = {classes.clearBtn}
+                        onClick = {()=>setSearchKey('')}
+
+                        >Clear</button></Ripple>
+                    
+                       <Ripple color={'#2dd679'}> <button 
+                        className = {classes.clearBtn}
+                        >Submit</button></Ripple>
+                    </div>
+                </Card>
+                </div>
+                
             </Card>
         </animated.div>
     );

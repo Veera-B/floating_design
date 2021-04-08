@@ -1,10 +1,10 @@
 .Info{
-    background-color: #000;
+    background-color: rgba(7, 6, 6, 0.856);
     color:#fff;
-    border-radius: 2%;
+    border-radius: 3%;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
     padding: 10px;
     font-weight: 600;
-    box-shadow: 1px 2px 2px rgb(179, 174, 174);
+    box-shadow: 1px 7px 7px rgb(10, 10, 10);
 }
